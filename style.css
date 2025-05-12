@@ -1,0 +1,186 @@
+/* Global Settings */
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    font-size: 18px;
+}
+
+
+/* For the Header (You must use align-items here because the <p> tag
+won't work with align-content since it is not considered a flex component*/
+
+.heroheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1F2937;
+    font-size: 24px;
+    font-weight: bold;
+    color:#F9FAF8;
+    padding-left: 15%;
+}
+
+a {
+  color: #F9FAF8;
+  text-decoration: none;
+}
+
+/* For the Hero navbar */
+
+.hero-nav {
+    display: flex;
+    font-size: 12px;
+    gap: 18px;
+    padding-right: 15%;
+}
+
+
+/* For the Hero body */
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto minmax (0, 1fr0);
+    grid-template-areas: "hero hero-image";
+    background-color:#1F2937;
+    padding-left: 15%;
+    padding-bottom: 50px;
+}
+
+.hero {
+    display: grid;
+    justify-items: left;
+    color: #E5E7EB;
+
+}
+.hero-image {
+    display: grid;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 5px 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px; /* This gives the button rounded corners */
+  }
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    color: #1F2937;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    flex-wrap: nowrap;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 50%;
+  min-width: auto;
+  height: auto;
+  border: 5px, solid, #3882F6;
+  border-radius: 10px;
+  gap:10px;
+  flex-shrink: auto;
+}
+
+h2 {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* For the Quote Section */
+.quote {
+  background-color: #E5E7EB;
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pquote {
+  font-weight: bold;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/* For the Footer */
+.herofooter {
+  text-align: center;
+  align-content: center;
+  height: 100px;
+  background-color:#1F2937;
+  color:#F9FAF8;
+  font-size: 12px;
+}
+
+/* For the call to action */
+.cta-section {
+  display:flex;
+  justify-self: center;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  width: 65%;
+  border-radius: 10px;
+  justify-content: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin: 10%;
+  font-size: 15px;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: 13px;
+}
+
+#cta-button {
+  border: 2px solid #FFFFFF;
+  justify-self: right;
+  color: #FFFFFF;
+}
+
+
